@@ -7,8 +7,8 @@ var state = {
 {
     name: 'Monday',
     tracked: [],
-	},
-    {
+},
+{
     name: 'Tuesday', 
 	tracked: [],
 },
@@ -41,5 +41,8 @@ export default {
 				return state.days[i]
 				}
 			}
+    },
+    addFood(food) {
+        state.days.tracked.push(food)
     }
 }
